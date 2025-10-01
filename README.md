@@ -33,16 +33,18 @@ This dataset contains sport-specific observations of Relative Energy Deficiency 
 - `High Risk?`: Binary indicator of whether the observation's RED-s prevalence was above the median for its specific screening tool (Yes/No). This variable standardizes risk assessment within measurement method to control for tool-specific bias. Median thresholds varied by tool: LEAF-Q (63.0%), EA calculation (63.0%), MD (17.3%), etc.
 
 ### Measurement Variables
-- `Primary_Screening_Tool_Used`: Method used to assess RED-s risk
-  - Risk % Prioritization Hierarchy (Screening Tools)	
-      1	LEAF-Q (≥8 cutoff) – use reported prevalence.
-      2	Calculated Energy Availability (EA calculation) (EA <30 kcal/kg FFM) – use reported prevalence.
-      3	DEAQ (Dance-Specific Energy Availability Questionnaire) – use reported prevalence.
-      4	Disordered Eating screen (DE screen) as proxy for LEA – use prevalence from EDE-Q, EAT-26, or similar validated DE screen above clinical cutoff.
-      5	Composite Triad risk – if study reports prevalence of athletes meeting ≥1 Triad criteria (LEA/DE, MD, or low BMD).
-      6	Menstrual dysfunction (MD) – use prevalence of oligomenorrhea/amenorrhea (≤10–11 menses per year).
-      7	Lab measures (e.g., ferritin <20 ng/ml, hemoglobin <12 g/dl, other clinical markers of deficiency) – use prevalence of athletes below cutoff.
-      8	Low BMD – use prevalence of athletes with BMD Z-score ≤ –1.0 (or equivalent).
+- `Primary_Screening_Tool_Used`: Method used to assess RED-s risk. When multiple indicators were available in a single study, the following prioritization hierarchy was applied:
+
+**Risk % Prioritization Hierarchy (Screening Tools)**
+
+1. LEAF-Q (≥8 cutoff) – use reported prevalence
+2. Calculated Energy Availability (EA <30 kcal/kg FFM) – use reported prevalence
+3. DEAQ (Dance-Specific Energy Availability Questionnaire) – use reported prevalence
+4. Disordered Eating screen (DE screen) as proxy for LEA – use prevalence from EDE-Q, EAT-26, or similar validated DE screen above clinical cutoff
+5. Composite Triad risk – if study reports prevalence of athletes meeting ≥1 Triad criteria (LEA/DE, MD, or low BMD)
+6. Menstrual dysfunction (MD) – use prevalence of oligomenorrhea/amenorrhea (≤10-11 menses per year)
+7. Lab measures (e.g., ferritin <20 ng/ml, hemoglobin <12 g/dl, other clinical markers of deficiency) – use prevalence of athletes below cutoff
+8. Low BMD – use prevalence of athletes with BMD Z-score ≤-1.0 (or equivalent)
 
 ### Other Variables
 - `Sport_Type`: Specific sport (e.g., Soccer, Volleyball, Ballet)
